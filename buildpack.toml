@@ -19,7 +19,7 @@ api = "0.7"
   homepage = "https://github.com/initializ-buildpacks/environment-variables"
   id = "initializ-buildpacks/environment-variables"
   keywords = ["environment-variables", "configuration"]
-  name = "Paketo Buildpack for Environment Variables"
+  name = "Initializ Buildpack for Environment Variables"
   version = "{{.version}}"
   sbom-formats = ["application/vnd.cyclonedx+json", "application/vnd.syft+json"]
 
