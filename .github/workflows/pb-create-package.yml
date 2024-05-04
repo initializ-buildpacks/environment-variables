@@ -225,7 +225,7 @@ jobs:
             - if: ${{ true }}
               uses: docker://ghcr.io/buildpacks/actions/registry/request-add-entry:4.0.1
               with:
-                address: docker.io/initializbuildpacks/environment-variables@${{ steps.package.outputs.digest }}
+                address: initializbuildpacks/environment-variables@${{ steps.package.outputs.digest }}
                 id: initializ-buildpacks/environment-variables
                 token: ${{ secrets.INITIALIZ_BOT_GITHUB_TOKEN }}
                 version: ${{ steps.version.outputs.version }}
