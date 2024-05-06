@@ -195,7 +195,7 @@ jobs:
                     --format "${FORMAT}"
                 fi
               env:
-                PACKAGES: docker.io/initializbuildpacks/environment-variables docker.io/initializbuildpacks/environment-variables
+                PACKAGES: docker.io/initializbuildpacks/environment-variables
                 PUBLISH: "true"
                 VERSION: ${{ steps.version.outputs.version }}
                 VERSION_MAJOR: ${{ steps.version.outputs.version-major }}
