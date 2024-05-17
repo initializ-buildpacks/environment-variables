@@ -1,4 +1,4 @@
-# `https://hub.docker.com/r/environment-variables
+# `https://hub.docker.com/r/environment-variables`
 
 Welcome to the Initializ Buildpack for Environment Variables! This nifty Cloud Native Buildpack seamlessly integrates environment variables into your image.
 
