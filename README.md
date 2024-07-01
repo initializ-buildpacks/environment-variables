@@ -25,4 +25,4 @@ By the way, the default delimiter is an empty string. No strings attached!
 
 ## License
 
-This buildpack operates under version 2.0 of the [Apache License][a].
+This buildpack operates under version 2.0 of the [Apache License][a]
