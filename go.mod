@@ -1,6 +1,6 @@
 module github.com/initializ-buildpacks/environment-variables/v4
 
-go 1.23.2
+go 1.24.1
 
 require (
 	github.com/buildpacks/libcnb v1.30.3
