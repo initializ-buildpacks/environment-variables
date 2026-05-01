@@ -17,7 +17,6 @@
 package env
 
 import (
-	"fmt"
 	"strings"
 
 	"github.com/buildpacks/libcnb"
@@ -59,7 +58,6 @@ func (b Build) Build(context libcnb.BuildContext) (libcnb.BuildResult, error) {
 
 	envVars := map[string]string{}
 	for k, v := range context.Platform.Environment {
-		v := v
 		for _, modType := range modTypes {
 			if strings.HasPrefix(k, modType.prefix) {
 				envVars[strings.TrimPrefix(k, modType.prefix)+modType.suffix] = v
@@ -81,7 +79,7 @@ func (b Build) LogConfiguration() {
 			nameLength = l
 		}
 	}
-	b.Logger.Header(fmt.Sprint("Launch Configuration:"))
+	b.Logger.Header("Launch Configuration:")
 	b.Logger.Bodyf("$%s\t prepend value to $NAME, delimiting with OS path list separator", pad(key(Prefix), nameLength))
 	b.Logger.Bodyf("$%s\t append value to $NAME", pad(key(PrefixTypeAppend), nameLength))
 	b.Logger.Bodyf("$%s\t set default value for $NAME", pad(key(PrefixTypeDefault), nameLength))
